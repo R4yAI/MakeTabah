@@ -23,6 +23,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QtMan
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        rsc.qrc
+        user.h user.cpp
+        resource.h resource.cpp
+        book.h book.cpp
+        digitalcontent.h digitalcontent.cpp
+        article.h article.cpp
+        login.h login.cpp
+        library.h library.cpp
+        resourcemanagementwindow.h resourcemanagementwindow.cpp resourcemanagementwindow.ui
+        addrsrcdialog.h addrsrcdialog.cpp addrsrcdialog.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET QtMan APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
