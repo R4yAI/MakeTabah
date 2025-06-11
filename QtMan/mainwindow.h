@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "resourcemanagementwindow.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -17,7 +19,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_RsrcManWinBtn_3_clicked();
+
 private:
     Ui::MainWindow *ui;
+    ResourceManagementWindow * ptrRsrcManWin;
 };
 #endif // MAINWINDOW_H
